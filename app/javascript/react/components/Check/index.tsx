@@ -9,7 +9,11 @@ interface IProps {
   square?: boolean;
 }
 
-export default function Check({ size = "Small", square, selected }: IProps) {
+export default function Check({
+  size = "Small",
+  square = false,
+  selected = false
+}: IProps) {
   const className = classNames(styles.check, styles[`check${size}`], {
     [styles.checkSquare]: square,
     [styles.checkSelected]: selected,

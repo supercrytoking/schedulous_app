@@ -11,7 +11,6 @@ interface IProps {
 export default function Rest({
   service,
   model = "",
-  onSubmit,
   children
 }: IProps) {
   const submit = async (data, form) => {

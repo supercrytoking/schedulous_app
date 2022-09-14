@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "~/components/Avatar";
 import Check from "~/components/Check";
-import { ILineItemProps } from "~/components/Autocoplete";
+import { ILineItemProps } from "~/components/Form/Controls/Autocomplete";
 import classNames from "classnames";
 
 import styles from "./styles.module.scss";
