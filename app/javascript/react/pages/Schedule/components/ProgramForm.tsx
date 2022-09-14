@@ -13,11 +13,17 @@ import TrashIcon from "~/icons/Trash";
 import classNames from "classnames";
 
 import styles from "./styles.module.scss";
+import { stringify } from "querystring";
 
 interface IProps {
   apiService: any;
   handleSubmit?: any;
   currentTab?: string;
+}
+
+interface IOption {
+  value: string;
+  label: string;
 }
 
 export default function ProgramForm({
@@ -39,10 +45,10 @@ export default function ProgramForm({
   ];
 
   const range = (start: number, end: number) => {
-    let nums = [];
+    let nums: IOption[] = [];
     for (let i = start; i < end; i++)
       nums.push({
-        label: i < 10 ? "0" + i.toString() : i.toString(),
+        label: (i < 10 ? "0" + i.toString() : i.toString()),
         value: i.toString(),
       });
     return nums;
