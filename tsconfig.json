@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "baseUrl": "./app/javascript/react",
     "paths": {
-      "~/*": ["./*"]
+      "~/*": ["./*"],
     },
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   }
