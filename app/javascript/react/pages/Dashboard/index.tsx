@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import useUser from "~/hooks/useUser";
 import useAccount from "~/hooks/useAccount";
 

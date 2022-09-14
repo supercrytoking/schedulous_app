@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useReducer } from "react";
+import React, { useEffect, useReducer } from "react";
 import SettingsLayout from "~/layouts/SettingsLayout";
 import EditIcon from "~/icons/Edit";
 import MoreIcon from "~/icons/More";

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Container from "~/components/Container";
 import Button from "~/components/Button";
 import Authentication from "~/layouts/Authentication";
@@ -8,8 +8,6 @@ import { paths } from "~/paths";
 
 export default function Login() {
 
-  const nameRef = useRef<HTMLInputElement | null>(null);
-  const pwdRef = useRef<HTMLInputElement | null>(null);
   const handleSubmit = () => {
     window.location.href = paths.dashboard();
   };
@@ -23,14 +21,12 @@ export default function Login() {
             path="email"
             label="Email"
             type="text"
-          // control="text"
           />
           <Form.Input
             name="user[password]"
             path="password"
             label="Password"
             type="password"
-          // control="password"
           />
           <Button type="submit" title="Log In" />
         </Form>

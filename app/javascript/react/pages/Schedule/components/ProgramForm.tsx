@@ -1,8 +1,5 @@
 import React from "react";
 import { filter, findIndex } from "lodash";
-import { useNavigate } from "react-router-dom";
-
-import { paths } from "~/paths";
 import { Program } from "~/models/program";
 import Form, { getFormMethods } from "~/components/Form";
 import Button from "~/components/Button";

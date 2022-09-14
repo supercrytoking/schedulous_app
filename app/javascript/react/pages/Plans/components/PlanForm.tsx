@@ -45,7 +45,7 @@ export default function PlanForm({ apiService, onSubmit, newForm }: IProps) {
                 />
 
                 <div className={styles.interval}>
-                  <Font block={true} size="sm" weight="bold" color="gray-500">
+                  <Font block={true} size="small" weight="bold" color="gray-500">
                     Recurring every
                   </Font>
 
