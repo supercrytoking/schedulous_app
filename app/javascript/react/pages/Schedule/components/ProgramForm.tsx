@@ -13,7 +13,6 @@ import TrashIcon from "~/icons/Trash";
 import classNames from "classnames";
 
 import styles from "./styles.module.scss";
-import { stringify } from "querystring";
 
 interface IProps {
   apiService: any;
