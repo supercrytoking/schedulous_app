@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 import { AccountContext } from "../../state/account/context";
 
 export default function Settings() {
-  const { state: stateAccount, dispatch: accountDispatch } =
+  const { state: stateAccount } =
     useContext(AccountContext);
   return (
     <SettingsLayout title="Settings">

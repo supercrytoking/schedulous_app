@@ -36,12 +36,14 @@ export const initialProgramState: ProgramState = {
   program: {
     account_id: null,
     capacity: null,
+    duration: null,
     description: null,
     image: null,
     name: null,
     start_date: moment().format("DD/MM/YYYY"),
     created_at: null,
     updated_at: null,
+    frequency: null,
     program_timeslots_attributes: [
       { ...initialProgramTimeslot, uniqueId: uniqueId() },
     ],

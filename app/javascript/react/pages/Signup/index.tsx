@@ -25,13 +25,13 @@ export default function Signup() {
             name="user.email"
             path="email"
             label="Your Best Email"
-            control="text"
+            type="text"
           />
           <Form.Input
             name="user.password"
             path="password"
             label="Password"
-            control="password"
+            type="password"
           />
           <Button type="submit" title="Sign Up" />
         </Form>

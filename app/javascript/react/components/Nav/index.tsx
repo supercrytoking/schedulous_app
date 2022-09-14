@@ -16,19 +16,19 @@ import Logo from "images/brand/logo-mark.svg";
 import { logout } from "~/api/authentication";
 import styles from "./styles.module.scss";
 import classNames from "classnames";
-import useUser from "~/hooks/useUser";
+// import useUser from "~/hooks/useUser";
 
 const LINKS = [
-  { title: "Dashboard", url: paths.dashboard(), icon: DashboardIcon },
-  { title: "People", url: paths.people.index(), icon: PeopleIcon },
-  { title: "Inbox", url: paths.inbox.index(), icon: MessageIcon },
-  { title: "Calendar", url: paths.calendar.index(), icon: CalendarIcon },
-  { title: "Tasks", url: paths.tasks.index(), icon: TasksIcon },
-  { title: "Reports", url: paths.reports.index(), icon: ChartIcon },
+  { title: "Dashboard", url: paths.dashboard(), icon: DashboardIcon, rendered: true },
+  { title: "People", url: paths.people.index(), icon: PeopleIcon, rendered: true },
+  { title: "Inbox", url: paths.inbox.index(), icon: MessageIcon, rendered: true },
+  { title: "Calendar", url: paths.calendar.index(), icon: CalendarIcon, rendered: true },
+  { title: "Tasks", url: paths.tasks.index(), icon: TasksIcon, rendered: true },
+  { title: "Reports", url: paths.reports.index(), icon: ChartIcon, rendered: true },
 ];
 
 const SETTINGS_LINK = [
-  { title: "Power Ups", url: paths.powerUps.index(), icon: PowerUpIcon },
+  { title: "Power Ups", url: paths.powerUps.index(), icon: PowerUpIcon, rendered: true },
   {
     title: "User",
     url: "javascript:;",
@@ -105,7 +105,7 @@ function NavLink({ title, url, icon, rendered }) {
 }
 
 function AccountMenu() {
-  const user = useUser();
+  // const user = useUser();
 
   const handleLogout = () => {
     logout().then(() => {

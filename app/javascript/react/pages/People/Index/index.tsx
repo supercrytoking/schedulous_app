@@ -109,7 +109,7 @@ const SubNav = () => {
       >
         Default Segments
       </Font>
-      <SubNavLink title="Members" bubble={1200} selected={true} to="" />
+      <SubNavLink title="Members" bubble={1200} to="" />
       <SubNavLink title="Leads" bubble={300} to="" />
       <SubNavLink title="Slipping away" bubble={300} to="" />
     </>

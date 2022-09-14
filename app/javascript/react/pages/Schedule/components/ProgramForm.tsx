@@ -38,7 +38,7 @@ export default function ProgramForm({
     { name: "sunday", label: "SUN" },
   ];
 
-  const range = (start, end) => {
+  const range = (start: number, end: number) => {
     let nums = [];
     for (let i = start; i < end; i++)
       nums.push({

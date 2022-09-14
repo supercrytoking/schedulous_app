@@ -18,6 +18,7 @@ export const initialAccountState: AccountState = {
     total_members: null,
     unit: null,
     years_in_business: null,
-    zip: null
+    zip: null,
+    has_stripe: null,
   },
 };

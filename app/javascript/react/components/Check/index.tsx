@@ -5,14 +5,14 @@ import styles from "./styles.module.scss";
 
 interface IProps {
   size?: "Small" | "Large";
-  selected: boolean;
+  selected?: boolean;
   square?: boolean;
 }
 
 export default function Check({
   size = "Small",
   square = false,
-  selected = false
+  selected = false,
 }: IProps) {
   const className = classNames(styles.check, styles[`check${size}`], {
     [styles.checkSquare]: square,
