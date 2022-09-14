@@ -3,7 +3,7 @@ import classNames from "classnames";
 import styles from "./styles.module.scss";
 
 import Box, { IBoxProps } from "~/components/Box";
-import { IColors, ISize } from "~/types";
+import { IColors } from "~/types";
 
 interface IProps extends IBoxProps {
   block?: boolean;
