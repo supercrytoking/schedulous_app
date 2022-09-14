@@ -3,7 +3,7 @@ import Font from "~/components/Font";
 import classNames from "classnames";
 import styles from "./styles.module.scss";
 
-const MIN_LENGTH = 1;
+// const MIN_LENGTH = 1;
 
 interface IProps {
   label?: string;

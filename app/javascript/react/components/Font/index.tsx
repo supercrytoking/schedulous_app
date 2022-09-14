@@ -3,7 +3,7 @@ import classNames from "classnames";
 import styles from "./styles.module.scss";
 
 import Box, { IBoxProps } from "~/components/Box";
-import { IColors } from "~/types";
+import { IColors, ISize } from "~/types";
 
 interface IProps extends IBoxProps {
   block?: boolean;
@@ -15,19 +15,19 @@ interface IProps extends IBoxProps {
   lowercase?: boolean;
   capitalize?: boolean;
   color?: IColors;
-
+  // size?: ISize;
   size?:
-    | "h1"
-    | "h2"
-    | "h3"
-    | "h4"
-    | "h5"
-    | "h6"
-    | "xLarge"
-    | "large"
-    | "medium"
-    | "small"
-    | "xSmall";
+  | "h1"
+  | "h2"
+  | "h3"
+  | "h4"
+  | "h5"
+  | "h6"
+  | "xLarge"
+  | "large"
+  | "medium"
+  | "small"
+  | "xSmall";
 
   weight?: "regular" | "medium" | "semiBold" | "bold" | "xBold";
 
@@ -58,8 +58,8 @@ export default function Font({ ...props }: IProps) {
       [styles.uppercase]: uppercase,
       [styles.lowercase]: lowercase,
       [styles.capitalize]: capitalize,
-      [styles[size]]: size,
-      [styles[weight]]: weight,
+      [styles.size]: size,
+      [styles.weight]: weight,
       [styles[`color-${color}`]]: color,
     },
     className
