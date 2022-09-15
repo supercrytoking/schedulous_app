@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.7.6"
+ruby "3.1.2"
 
 gem 'acts_as_tenant', '~> 0.5.0'
 gem "acts_as_list"
