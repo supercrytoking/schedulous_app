@@ -31,6 +31,7 @@ gem "invisible_captcha"
 gem "jbuilder", "~> 2.7"
 gem "kitty_policy"
 gem "name_of_person"
+gem 'net-smtp'
 gem "omniauth"
 gem "omniauth-stripe-connect"
 gem "pagy"
