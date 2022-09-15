@@ -57,6 +57,8 @@ group :development, :test do
   gem "shoulda", "~> 4.0.0"
   gem "shoulda-matchers", "~> 4.5.1"
   gem 'wdm', '>= 0.1.0'
+  gem 'net-smtp'
+  gem 'tzinfo-data'
 end
 
 group :development do
